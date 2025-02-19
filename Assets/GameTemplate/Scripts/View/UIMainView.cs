@@ -1,9 +1,6 @@
 using deVoid.UIFramework;
-using System.Collections;
-using System.IO;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class UIMainView : APanelController
 {
@@ -15,15 +12,4 @@ public class UIMainView : APanelController
         timer += Time.deltaTime;
         tmpTime.text = timer.ToString("F2");
     }
-
-    
-
-
-
-
-
-
-
-
-
 }

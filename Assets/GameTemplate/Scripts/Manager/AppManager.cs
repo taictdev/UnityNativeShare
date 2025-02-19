@@ -1,12 +1,10 @@
 using Cysharp.Threading.Tasks;
-using GameTemplate;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 using Utils;
 
 public class AppManager : AutoSingletonMono<AppManager>
 {
+    public string LastFilePath { get; set; }
 
     public override async void Awake()
     {
