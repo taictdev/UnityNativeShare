@@ -1,3 +1,4 @@
+using GameTemplate;
 using Utils;
 
 public class MainRootScene : ManualSingletonMono<MainRootScene>
@@ -12,7 +13,7 @@ public class MainRootScene : ManualSingletonMono<MainRootScene>
 
     private void Start()
     {
-        
+        UIFrameManager.Instance.uIFrame.ShowPanel(ScreenIds.UIMain);
     }
 
     public async void ChangeState(IState state)
