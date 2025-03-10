@@ -1,3 +1,4 @@
+using System.IO;
 using RenderHeads.Media.AVProMovieCapture;
 using TMPro;
 using UnityEngine;
@@ -8,18 +9,10 @@ namespace GameTemplate
     {
         [SerializeField] private TextMeshProUGUI tmpStatus;
         [SerializeField] private bool isRecording = false;
-        private CaptureFromScreen capture;
+        [SerializeField]private CaptureFromScreen capture;
 
-        private void Start()
+        void Awake()
         {
-            GameObject go = new GameObject();
-            capture = go.AddComponent<CaptureFromScreen>();
-            capture.IsRealTime = false;
-            capture.FrameRate = 30f;
-            capture.StopMode = StopMode.None;
-            capture.OutputTarget = OutputTarget.VideoFile;
-            capture.FilenamePrefix = "DEMO";
-            capture.OutputFolder = CaptureBase.OutputPath.PhotoLibrary;
             capture.CompletedFileWritingAction += CompletedFileWritingAction;
         }
 
@@ -45,6 +38,21 @@ namespace GameTemplate
             else
             {
                 tmpStatus.text = "Screen Record";
+                // delete the last file
+                if (File.Exists(CaptureBase.LastFileSaved))
+                {
+                    File.Delete(CaptureBase.LastFileSaved);
+                }
+                // await for the last file to be deleted before stopping the capture
+                while (File.Exists(CaptureBase.LastFileSaved))
+                {
+                    Debug.Log("Waiting for the last file to be deleted...");
+                    // asign text into tpStatus to show the user that the file is being deleted
+                    tmpStatus.text = "Deleting the last file...";
+                }
+                // update tmpStatus text
+                tmpStatus.text = "Screen Record";
+                // stop the capture after the last file is deleted
                 capture.StopCapture();
             }
         }
