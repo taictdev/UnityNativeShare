@@ -16,13 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: ab90bd9e0731544f481799f0c2a351e1
-  m_SerializeEntries:
-  - m_GUID: 762f3779642354dd9bbfbdc47f54efd6
-    m_Address: Assets/XOGame/Configs/Items/ItemConfig.asset
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - item_config
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a8492b5d06c6a4be28bda727569e4c27, type: 2}
   m_SchemaSet:

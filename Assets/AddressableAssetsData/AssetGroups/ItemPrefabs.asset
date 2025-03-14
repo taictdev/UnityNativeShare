@@ -16,12 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 2b6d00204c7e94d658c2de102350c376
-  m_SerializeEntries:
-  - m_GUID: 8eb3332c087f34724bd68aa311e6fdd6
-    m_Address: Assets/XOGame/Prefabs/Items/Food.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a8492b5d06c6a4be28bda727569e4c27, type: 2}
   m_SchemaSet:

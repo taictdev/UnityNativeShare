@@ -16,13 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: a94fae9946e024f419552c17ced46af8
-  m_SerializeEntries:
-  - m_GUID: d5cd4d2c3c95a6a41a5c81b375e7e5c6
-    m_Address: Assets/XOGame/Prefabs/Characters/Popo.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - player
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a8492b5d06c6a4be28bda727569e4c27, type: 2}
   m_SchemaSet:

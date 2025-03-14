@@ -16,13 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 9f37d36cd754c4545b93b188d9dd5041
-  m_SerializeEntries:
-  - m_GUID: d919e0391dbe2384592c363314dd6ce9
-    m_Address: Assets/XOGame/Configs/Characters/CharacterConfig.asset
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - character_config
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: a8492b5d06c6a4be28bda727569e4c27, type: 2}
   m_SchemaSet:
